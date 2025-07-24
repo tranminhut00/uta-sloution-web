@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Globe, Smartphone } from "lucide-react";
 const heroImage = "/assets/hero-bg.jpg";
 

@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const Portfolio = () => {
   const projects = [
@@ -110,9 +111,11 @@ const Portfolio = () => {
             <Card key={index} variant="floating" className="overflow-hidden group cursor-pointer">
               {/* Project Image */}
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={600}
+                  height={400}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -141,7 +144,7 @@ const Portfolio = () => {
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
+                    <Badge key={tech} className="text-xs">
                       {tech}
                     </Badge>
                   ))}

@@ -7,7 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout() {
   return (
     <html lang="vi" className="dark">
       <body className="bg-background text-foreground">
@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Portfolio />
         <Contact />
         <Footer />
-        {/* {children} */}
       </body>
     </html>
   );
