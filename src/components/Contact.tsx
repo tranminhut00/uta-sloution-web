@@ -13,29 +13,30 @@ import {
   Linkedin,
   Twitter
 } from "lucide-react";
+import React from "react";
 
 const Contact = () => {
   const contactInfo = [
     {
-      icon: (props: any) => <MapPin {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <MapPin {...props} className="text-green-500" />,
       title: "Địa chỉ văn phòng",
       content: "123 Nguyễn Văn Cừ, Quận 5, TP.HCM",
       subContent: "Tầng 8, Tòa nhà IT Center"
     },
     {
-      icon: (props: any) => <Phone {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Phone {...props} className="text-green-500" />,
       title: "Số điện thoại",
       content: "+84 28 3812 3456",
       subContent: "Hotline: 1900 9999"
     },
     {
-      icon: (props: any) => <Mail {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Mail {...props} className="text-green-500" />,
       title: "Email liên hệ",
       content: "info@utasolution.com",
       subContent: "support@utasolution.com"
     },
     {
-      icon: (props: any) => <Clock {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Clock {...props} className="text-green-500" />,
       title: "Giờ làm việc",
       content: "Thứ 2 - Thứ 6: 8:00 - 18:00",
       subContent: "Thứ 7: 8:00 - 12:00"

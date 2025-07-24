@@ -10,26 +10,27 @@ import {
   TrendingUp,
   Target
 } from "lucide-react";
+import React from "react";
 
 const About = () => {
   const values = [
     {
-      icon: (props: any) => <Lightbulb {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Lightbulb {...props} className="text-green-500" />,
       title: "Sáng tạo",
       description: "Luôn tìm kiếm giải pháp mới, công nghệ tiên tiến để đem lại giá trị tốt nhất cho khách hàng"
     },
     {
-      icon: (props: any) => <Heart {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Heart {...props} className="text-green-500" />,
       title: "Tận tâm",
       description: "Đặt khách hàng làm trọng tâm, cam kết hỗ trợ và đồng hành cùng sự phát triển của doanh nghiệp"
     },
     {
-      icon: (props: any) => <Award {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Award {...props} className="text-green-500" />,
       title: "Chất lượng",
       description: "Đảm bảo chất lượng cao trong từng sản phẩm, dịch vụ với quy trình làm việc chuyên nghiệp"
     },
     {
-      icon: (props: any) => <Target {...props} className="text-green-500" />,
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Target {...props} className="text-green-500" />,
       title: "Hiệu quả",
       description: "Tối ưu hóa hiệu suất, mang lại ROI tích cực và kết quả vượt mong đợi cho mọi dự án"
     }
@@ -39,7 +40,7 @@ const About = () => {
     { 
       number: "100+", 
       label: "Dự án hoàn thành", 
-      icon: (props: any) => (
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
         <div className="flex justify-center items-center mb-[10px]">
           <TrendingUp {...props} className="text-green-500" />
         </div>
@@ -48,7 +49,7 @@ const About = () => {
     { 
       number: "50+", 
       label: "Khách hàng tin tưởng", 
-      icon: (props: any) => (
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
         <div className="flex justify-center items-center mb-[10px]">
           <Users {...props} className="text-green-500" />
         </div>
@@ -57,7 +58,7 @@ const About = () => {
     { 
       number: "5+", 
       label: "Năm kinh nghiệm", 
-      icon: (props: any) => (
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
         <div className="flex justify-center items-center mb-[10px]">
           <Award {...props} className="text-green-500" />
         </div>
@@ -66,7 +67,7 @@ const About = () => {
     { 
       number: "4.9/5", 
       label: "Đánh giá khách hàng", 
-      icon: (props: any) => (
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
         <div className="flex justify-center items-center mb-[10px]">
           <Star {...props} className="text-green-500" />
         </div>
